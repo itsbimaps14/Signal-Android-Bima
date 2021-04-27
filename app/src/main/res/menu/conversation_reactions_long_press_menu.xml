@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_pin_msg"
+        android:icon="@drawable/ic_pin_24"
+        android:title="@string/pin_message"
+        app:iconTint="@color/signal_icon_tint_primary"
+        app:showAsAction="always" />
     <item
         android:id="@+id/action_info"
         android:icon="@drawable/ic_info_white_24"
@@ -40,8 +47,6 @@
         app:showAsAction="always" />
     <item
         android:id="@+id/action_forward"
-        android:icon="@drawable/ic_forward_24"
         android:title="@string/conversation_context__menu_forward_message"
-        app:iconTint="@color/signal_icon_tint_primary"
         app:showAsAction="ifRoom" />
 </menu>

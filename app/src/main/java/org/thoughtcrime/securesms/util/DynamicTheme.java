@@ -53,6 +53,12 @@ public class DynamicTheme {
     return Build.VERSION.SDK_INT >= 29;
   }
 
+  // Get Theme by Bima Putra S - 191524038
+  public static String ambilThemeBima(@NonNull Context context){
+    String hasil = TextSecurePreferences.getTheme(context);
+    return hasil;
+  }
+
   public static void setDefaultDayNightMode(@NonNull Context context) {
     String theme = TextSecurePreferences.getTheme(context);
 
